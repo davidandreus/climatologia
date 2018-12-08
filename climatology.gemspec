@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "Put your gem's public repo URL here."
-    spec.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
+    spec.metadata["source_code_uri"] = "http://mygemserver.com"
+    spec.metadata["changelog_uri"] = "http://mygemserver.com"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -42,4 +42,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "open-weather"
   spec.add_dependency "influxdb"
+  spec.add_development_dependency "byebug"
 end
